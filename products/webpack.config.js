@@ -22,7 +22,7 @@ module.exports = {
       name: "products",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App.js", // use a consistent name for host
+        "./App": "./src/index.js",
       },
       shared: { react: { singleton: true }, "react-dom": { singleton: true } },
     }),

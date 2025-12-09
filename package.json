@@ -3,19 +3,19 @@
   "private": true,
   "workspaces": [
     "host",
-    "remote/products",
-    "remote/cart"
+    "products",
+    "cart"
   ],
   "scripts": {
     "start": "npm-run-all --parallel start:host start:products start:cart",
     "start:host": "npm --prefix host start",
-    "start:products": "npm --prefix remote/products start",
-    "start:cart": "npm --prefix remote/cart start",
+    "start:products": "npm --prefix products start",
+    "start:cart": "npm --prefix cart start",
     "build": "npm install && npm build:all && npm run prepare-deploy",
     "build:all": "npm-run-all build:host build:products build:cart",
     "build:host": "npm --prefix host run build",
-    "build:products": "npm --prefix remote/products run build",
-    "build:cart": "npm --prefix remote/cart run build",
+    "build:products": "npm --prefix products run build",
+    "build:cart": "npm --prefix cart run build",
     "prepare-deploy": "node deploy.js"
   },
   "devDependencies": {
