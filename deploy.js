@@ -7,7 +7,7 @@ const root = __dirname;
 const hostDist = path.join(root, "host", "dist");
 const productsDist = path.join(root, "remote", "products", "dist");
 const cartDist = path.join(root, "remote", "cart", "dist");
-const deployFolder = path.join(root, "deploy");
+const deployFolder = path.join(root, "build");
 
 // Clean deploy folder
 fs.emptyDirSync(deployFolder);

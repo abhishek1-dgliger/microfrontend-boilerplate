@@ -11,7 +11,8 @@
     "start:host": "npm --prefix host start",
     "start:products": "npm --prefix remote/products start",
     "start:cart": "npm --prefix remote/cart start",
-    "build": "npm-run-all build:host build:products build:cart && npm run prepare-deploy",
+    "build": "npm install && npm build:all && npm run prepare-deploy",
+    "build:all": "npm-run-all build:host build:products build:cart",
     "build:host": "npm --prefix host run build",
     "build:products": "npm --prefix remote/products run build",
     "build:cart": "npm --prefix remote/cart run build",
@@ -19,9 +20,5 @@
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5"
-  },
-  "dependencies": {
-    "dotenv": "^17.2.3",
-    "fs-extra": "^11.3.2"
   }
 }
