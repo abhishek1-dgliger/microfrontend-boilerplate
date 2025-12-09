@@ -11,7 +11,7 @@ module.exports = {
     historyApiFallback: true,
   },
   output: {
-    publicPath: "auto", // important for remote loading
+    publicPath: "/products/",
     clean: true,
   },
   module: {
