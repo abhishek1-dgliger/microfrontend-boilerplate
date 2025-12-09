@@ -5,8 +5,8 @@ const root = __dirname;
 
 // Paths
 const hostDist = path.join(root, "host", "dist");
-const productsDist = path.join(root, "remote", "products", "dist");
-const cartDist = path.join(root, "remote", "cart", "dist");
+const productsDist = path.join(root, "products", "dist");
+const cartDist = path.join(root, "cart", "dist");
 const deployFolder = path.join(root, "build");
 
 // Clean deploy folder
