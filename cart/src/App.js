@@ -1,14 +1,23 @@
 import React from "react";
 
-import { Button, Input } from "shared_ui";
+import {
+  Container,
+  Heading,
+  Paragraph,
+  Wrapper,
+  NavigationButton,
+} from "shared_ui";
 
 export default function App() {
   return (
-    <div>
-      <Button />
-      <Input />
-      <h2>Your Cart</h2>
-      <p>No items added yet.</p>
-    </div>
+    <Container>
+      <Wrapper>
+        <Heading target="h2">Your Cart</Heading>
+        <Paragraph>No items added yet.</Paragraph>
+        <NavigationButton color="primary" href="/">
+          Go to Home
+        </NavigationButton>
+      </Wrapper>
+    </Container>
   );
 }

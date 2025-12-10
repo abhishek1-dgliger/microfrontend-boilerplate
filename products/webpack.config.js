@@ -15,15 +15,15 @@ module.exports = {
     clean: true,
   },
   module: {
-    rules: [{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }],
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+      { test: /\.css$/, use: ["style-loader", "css-loader"] },
+    ],
   },
   plugins: [
     new ModuleFederationPlugin({
       name: "products",
       filename: "remoteEntry.js",
-      exposes: {
-        "./App": "./src/index.js",
-      },
       shared: { react: { singleton: true }, "react-dom": { singleton: true } },
     }),
     new HtmlWebpackPlugin({ template: "./public/index.html" }),

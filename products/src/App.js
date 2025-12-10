@@ -1,14 +1,33 @@
 import React from "react";
+import {
+  Container,
+  Wrapper,
+  Heading,
+  List,
+  ListItem,
+  Paragraph,
+} from "shared_ui";
 
 export default function App() {
   return (
-    <div>
-      <h2>Products</h2>
-      <ul>
-        <li>iPhone 16 – ₹79,990</li>
-        <li>Samsung S25 – ₹69,990</li>
-        <li>Pixel 10 Pro – ₹89,990</li>
-      </ul>
-    </div>
+    <Container>
+      <Wrapper>
+        <Heading target="h2">Products</Heading>
+        <List>
+          <ListItem>
+            <Heading target="h5">iPhone 16 - </Heading>
+            <Paragraph>₹79,990</Paragraph>
+          </ListItem>
+          <ListItem>
+            <Heading target="h5">Samsung S25 - </Heading>
+            <Paragraph>₹69,990</Paragraph>
+          </ListItem>
+          <ListItem>
+            <Heading target="h5">Pixel 10 Pro - </Heading>
+            <Paragraph>₹89,990</Paragraph>
+          </ListItem>
+        </List>
+      </Wrapper>
+    </Container>
   );
 }
