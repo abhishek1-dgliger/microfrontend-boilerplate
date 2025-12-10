@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  Container,
+  Layout,
   Heading,
   Paragraph,
   Wrapper,
@@ -10,14 +10,15 @@ import {
 
 export default function App() {
   return (
-    <Container>
+    <Layout>
+      <div style={{ paddingTop: "80px" }} />
       <Wrapper>
         <Heading target="h2">Your Cart</Heading>
         <Paragraph>No items added yet.</Paragraph>
-        <NavigationButton color="primary" href="/">
-          Go to Home
+        <NavigationButton color="primary" href="#">
+          About us
         </NavigationButton>
       </Wrapper>
-    </Container>
+    </Layout>
   );
 }
