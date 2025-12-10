@@ -6,6 +6,7 @@ import {
   List,
   ListItem,
   Paragraph,
+  NavigationButton,
 } from "shared_ui";
 
 export default function App() {
@@ -27,6 +28,9 @@ export default function App() {
             <Paragraph>₹89,990</Paragraph>
           </ListItem>
         </List>
+        <NavigationButton color="primary" href="/">
+          Go to Home
+        </NavigationButton>
       </Wrapper>
     </Container>
   );
