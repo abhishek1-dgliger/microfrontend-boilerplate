@@ -11,7 +11,7 @@ module.exports = {
     historyApiFallback: true,
   },
   output: {
-    publicPath: "auto", // keeps dynamic loading working
+    publicPath: "/", // keeps dynamic loading working
     clean: true,
   },
   module: {
