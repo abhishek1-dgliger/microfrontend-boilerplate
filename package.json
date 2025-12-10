@@ -4,7 +4,8 @@
   "workspaces": [
     "host",
     "products",
-    "cart"
+    "cart",
+    "shared_ui"
   ],
   "scripts": {
     "start": "npm-run-all --parallel start:host start:products start:cart",

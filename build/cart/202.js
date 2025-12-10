@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcart=self.webpackChunkcart||[]).push([[202],{202:(e,t,n)=>{var l=n(232),r=n.n(l),u=n(476);function a(){return r().createElement("div",null,r().createElement("h2",null,"Your Cart"),r().createElement("p",null,"No items added yet."))}n.n(u)().render(r().createElement(a,null),document.getElementById("root"))}}]);
