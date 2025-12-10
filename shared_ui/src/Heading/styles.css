@@ -2,7 +2,7 @@ h1 {
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #060a0f;
+  color: #333;
   line-height: 56px;
 }
 
@@ -10,7 +10,7 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #060a0f;
+  color: #333;
   line-height: 48px;
 }
 
@@ -18,7 +18,7 @@ h3 {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #060a0f;
+  color: #333;
   line-height: 40px;
 }
 
@@ -26,7 +26,7 @@ h4 {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #060a0f;
+  color: #333;
   line-height: 32px;
 }
 
@@ -34,7 +34,7 @@ h5 {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #060a0f;
+  color: #333;
   line-height: 24px;
 }
 
@@ -42,6 +42,6 @@ h6 {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #060a0f;
+  color: #333;
   line-height: 24px;
 }

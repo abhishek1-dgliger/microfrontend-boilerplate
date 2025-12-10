@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Container,
+  Layout,
   Wrapper,
   Heading,
   List,
@@ -11,8 +11,9 @@ import {
 
 export default function App() {
   return (
-    <Container>
+    <Layout>
       <Wrapper>
+        <div style={{ paddingTop: "80px" }} />
         <Heading target="h2">Products</Heading>
         <List>
           <ListItem>
@@ -28,10 +29,10 @@ export default function App() {
             <Paragraph>₹89,990</Paragraph>
           </ListItem>
         </List>
-        <NavigationButton color="primary" href="/">
-          Go to Home
+        <NavigationButton color="primary" href="#">
+          Know More
         </NavigationButton>
       </Wrapper>
-    </Container>
+    </Layout>
   );
 }
